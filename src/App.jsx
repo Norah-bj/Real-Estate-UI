@@ -14,6 +14,7 @@ import Layout from "./routes/layout/layout.jsx";
 import SinglePage from "./routes/singlePage/singlePage.jsx";
 import Login from "./routes/login/login.jsx";
 import ProfilePage from "./routes/profilePage/profilePage.jsx";
+import ErrorPage from "./routes/errorPage/errorPage.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,25 +31,32 @@ function App() {
           element: <ListPage />,
         },
         {
-          path: "/:id",
-          element: <SinglePage />,
-        },
-        {
           path: "/login",
           element: <Login />,
         },
         {
-          path: "*",
-          element: <div>404</div>,
+          path: "/profile",
+          element: <ProfilePage />,
         },
         {
-          path: "/profile",
-          element: < ProfilePage/>,
+          path: "/:id",
+          element: <SinglePage />,
+          loader: ({ params }) => {
+            if (!/^\d+$/.test(params.id)) {
+              throw new Response("Not Found", { status: 404 });
+            }
+            return null;
+          },
+          errorElement: <ErrorPage />,
         },
+        {
+          path: "*",
+          element: <ErrorPage />,
+        }
       ]
     }
   ]);
   return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
