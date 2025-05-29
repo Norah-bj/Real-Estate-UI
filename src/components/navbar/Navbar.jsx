@@ -25,8 +25,8 @@ function Navbar() {
           <div className="user">
             <Link to="/profile">
               <img
-                src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb"
-                alt=""
+                src="/profile-img.jpeg"
+                alt="/profile-img.jpeg"
               />
             </Link>
             

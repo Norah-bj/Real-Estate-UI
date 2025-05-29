@@ -8,37 +8,37 @@ function Chat() {
         <div className="messages">
             <h1>Messages</h1>
             <div className="message">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />
                 <span>John Doe</span>
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
 
             <div className="message">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />       
                 <span>John Doe</span>
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
 
             <div className="message">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />
                 <span>John Doe</span>
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
 
             <div className="message">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />
                 <span>John Doe</span>
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
 
             <div className="message">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />
                 <span>John Doe</span>
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
 
             <div className="message">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />
                 <span>John Doe</span>
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
@@ -46,7 +46,7 @@ function Chat() {
         {chat && (<div className="chatBox">
             <div className="top">
                 <div className="user">
-                    <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="..." />
+                    <img src="/profile-img.jpeg" alt="/profile-img.jpeg" />
                     <span>John Doe</span>
                 </div>
                 <span className="close" onClick={() => setChat(null)}></span>

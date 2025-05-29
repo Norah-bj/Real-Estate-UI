@@ -15,7 +15,7 @@ function ProfilePage() {
             <span>
               Avatar:
               <img
-                src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="/profile-img.jpeg"
                 alt=""
               />
             </span>
